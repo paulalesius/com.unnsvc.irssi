@@ -11,7 +11,7 @@ $VERSION = "0.1";
     description => 'This script colors outgoing text that you write.',
     license     => 'BSD',
     url         => 'https://github.com/paulalesius',
-    changed     => '2017-05-17',
+    changed     => '2018-01-02',
 );
 
 sub colorsend {
