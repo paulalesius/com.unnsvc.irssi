@@ -23,9 +23,10 @@ sub colorsend {
 
 	my $newmessage = "";
 	for my $c (split //, $message) {
-		my $rand = int(rand(15));
+		my $rand = int(rand(6));
+		$rand = $rand + 31;
 		#$witem->print("Char: $c Rand: $rand Newmessage: $newmessage");
-		$newmessage .= "\003$rand$c";
+		$newmessage .= "\033[" . $rand . ";1;1m" . $c . "\033[0m";
 	}
 	
 	#$witem->print("Outputting: '$newmessage'");
